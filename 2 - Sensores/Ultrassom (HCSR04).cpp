@@ -57,8 +57,8 @@ void loop()
   // em que o objeto se encontra (o tempo é dividido por 2, porque dessa forma é o tempo de ida e volta do sinal)
   distancia = (tempo/2)*0.0343; 
 
-  Serial.print("A distancia em cm e:")
-  Serial.println(distance);
+  Serial.print("A distancia em cm e:");
+  Serial.println(distancia);
   Serial.println("\n"); 
 }
 
