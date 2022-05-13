@@ -11,7 +11,7 @@
 */
 
 // Caso esteja utilizando o PlataformIO, descomente esta linha
-#include <Arduino.h>
+// #include <Arduino.h>
 
 // Escolha qual pino você quer que o LED esteja ligado
 #define LED_PIN 13
@@ -23,10 +23,13 @@ void setup()
     // Inicializa o pino LED_PIN e o configura como saída de sinal.
     pinMode(LED_PIN, OUTPUT);
 
+    // Inicia com o LED apagado
+    digitalWrite(LED_PIN, LOW); 
+
     // Inicializa e define a frequência da comunicação serial
     Serial.begin(9600); 
 
-    // Imprime essa mensagem no monitor serial
+    // Imprime essa mensagem no monitor serial e pula uma linha 
     Serial.println("A função deste código é controlar o led por meio da serial"); 
 
     // Espera por 2 segundos
@@ -36,7 +39,7 @@ void setup()
 // A função loop, como diz o nome, roda em loop enquanto a placa estiver ligada
 void loop() 
 {
-    // Imprime essa mensagem no monitor serial
+    // Imprime essa mensagem no monitor serial e pula uma linha
     Serial.println("Digite 0 desligar ou 1 para ligar o LED");
 
     // Verifica se há dados na serial para leitura
@@ -52,7 +55,7 @@ void loop()
                 // Faz com que a saída do pino LED_PIN seja BAIXA (0V)
                 digitalWrite(LED_PIN, LED_status); 
 
-                // Imprime essa mensagem no monitor serial
+                // Imprime essa mensagem no monitor serial e pula uma linha
                 Serial.println("LED esta desligado");
                 
                 // Espera por 2 segundos
@@ -64,7 +67,7 @@ void loop()
                 // Faz com que a saída do pino LED_PIN seja ALTA (5V)
                 digitalWrite(LED_PIN, LED_status); 
 
-                // Imprime essa mensagem no monitor serial
+                // Imprime essa mensagem no monitor serial e pula uma linha
                 Serial.println("LED esta desligado");
 
                 // Espera por 2 segundos
@@ -73,7 +76,7 @@ void loop()
     
             // Entra nessa condição caso o usuário tenha digitado qualquer número diferente de 0 e 1
             default:
-                // Imprime essa mensagem no monitor serial
+                // Imprime essa mensagem no monitor serial e pula uma linha
                 Serial.println("Opçao invalida"); 
 
                 // Espera por 2 segundos
