@@ -1,3 +1,12 @@
+/*--------------------------------------------------------------------*/
+//     CÓDIGO PARA COMUNICAÇÃO COM OUTROS DISPOSITIVOS VIA BLUETOOTH
+//     COM ESP32
+/*--------------------------------------------------------------------*/
+
+// Caso esteja utilizando a IDE do Arduino, comente a linha abaixo
+#include <Arduino.h>
+
+// Biblioteca para comunicação via bluetooth
 #include "BluetoothSerial.h"
 
 // Aqui é checado se o Bluetooth do esp está devidamente ativo
