@@ -19,7 +19,7 @@
     de tensão ou um conversor analógico para baixar o nível de tensão do echo. 
 
 */
-
+// Caso esteja utilizando a IDE do Arduino, comente a linha abaixo
 #include "Arduino.h"
 
 #define trig 4

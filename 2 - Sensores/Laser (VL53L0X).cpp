@@ -27,7 +27,10 @@
     SCL -> A5
 */
 
+// Caso esteja utilizando a IDE do Arduino, comente a linha abaixo
 #include "Arduino.h"
+
+// Biblioteca do sensor
 #include "Adafruit_VL53L0X.h"
 
 // Declara o sensor como o objeto "laser"

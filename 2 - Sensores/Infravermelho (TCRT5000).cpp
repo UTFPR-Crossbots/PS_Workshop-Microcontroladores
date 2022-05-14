@@ -21,7 +21,7 @@
     A0  -> A0
 */
 
-// Caso esteja utilizando o PlataformIO, descomente esta linha
+// Caso esteja utilizando a IDE do Arduino, comente a linha abaixo
 #include <Arduino.h>
 
 // LED do microcontrolador
